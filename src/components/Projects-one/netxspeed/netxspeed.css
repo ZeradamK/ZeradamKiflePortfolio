@@ -1,0 +1,18 @@
+/* src/components/GitHubLink.css */
+.netxspeed-container {
+    width: 1200px;
+    height: 120vh;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.netxspeed-container iframe {
+    width: 1200px;
+    height: 120vh;
+    border: none;
+    overflow: hidden;
+}
+.html{
+    overflow: hidden !important;
+}

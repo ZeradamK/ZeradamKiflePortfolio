@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scrollbar-color: #3a3a3a rgba(241, 241, 241, 0);
+  scrollbar-arrow-color: rgba(255, 255, 255, 0);
+}
+/* Custom Scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(241, 241, 241, 0);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1c1c1c;
+}
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #171717;
+  overflow-x: hidden !important;
+}
+/* customCursor.css */
+
+
+.cursor-overlay {
+  position: absolute;
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 80%);
+  pointer-events: none;
+  transition: transform 0.1s ease-out; /* Smooth movement */
+  mix-blend-mode: screen; /* Blends with the background */
+  z-index: 9999; /* Ensure it's above all other elements */
+}
